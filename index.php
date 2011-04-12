@@ -14,8 +14,8 @@ add_action('wp_dashboard_setup', 'bl_remove_dashboard_widgets', 100);
 function bl_remove_dashboard_widgets() {
 	remove_meta_box('dashboard_plugins', 'dashboard', 'normal');
 	remove_meta_box('dashboard_quick_press', 'dashboard', 'normal');
-	remove_meta_box('dashboard_primary', 'dashboard', 'normal');
-	remove_meta_box('dashboard_secondary', 'dashboard', 'normal'); 
+	remove_meta_box('dashboard_primary', 'dashboard', 'side');
+	remove_meta_box('dashboard_secondary', 'dashboard', 'side'); 
 }
 function bl_remove_network_dashboard_widgets() {
 	remove_meta_box('dashboard_plugins', 'dashboard-network', 'normal');
